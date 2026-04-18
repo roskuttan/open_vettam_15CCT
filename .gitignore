@@ -1,0 +1,20 @@
+# KiCad local state
+*.kicad_prl
+fp-info-cache
+~*.lck
+~*.kicad_sch.lck
+_autosave-*.kicad_sch
+_autosave-*.kicad_pcb
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.kicad_pro-bak
+*-backups/
+
+# Generated review output
+output/
+.kicad-assistant/
+
+# Local workspace noise
+.history/
+.codex/
+nul

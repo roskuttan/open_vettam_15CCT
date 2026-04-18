@@ -1,0 +1,28 @@
+import math, pcbnew
+
+board = pcbnew.GetBoard()
+fps = [fp for fp in board.GetFootprints() if fp.IsSelected()]
+
+# === USER SETTINGS ===
+cx_mm, cy_mm = 100.0, 100.0   # center of circle (X,Y)
+radius_mm = 40.0              # circle radius
+start_angle_deg = 90.0        # start from top (12 o’clock)
+# ======================
+
+if not fps:
+    print("⚠️  No footprints selected.")
+else:
+    count = len(fps)
+    print(f"Placing {count} footprints...")
+    step = 360.0 / count
+    mm_to_nm = 1e6
+
+    for i, fp in enumerate(fps):
+        angle_deg = start_angle_deg + i * step
+        angle_rad = math.radians(angle_deg)
+        x_nm = (cx_mm + radius_mm * math.cos(angle_rad)) * mm_to_nm
+        y_nm = (cy_mm + radius_mm * math.sin(angle_rad)) * mm_to_nm
+        fp.SetPosition(pcbnew.VECTOR2I(int(x_nm), int(y_nm)))
+        fp.SetOrientationDegrees(angle_deg + 90)
+    pcbnew.Refresh()
+    print("✅ Done: evenly placed footprints in a perfect circle.")

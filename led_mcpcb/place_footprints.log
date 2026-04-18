@@ -1,0 +1,32 @@
+10-26 22:52:18 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1154:Plugin executed on: 'win32'
+10-26 22:52:18 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1155:Plugin executed with python version: '3.11.5 (main, Jan 27 2025, 07:08:36) [MSC v.1942 64 bit (AMD64)]'
+10-26 22:52:18 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1156:KiCad build version: 9.0.2
+10-26 22:52:18 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1157:Plugin version: 4.0.1
+10-26 22:52:18 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1158:Frame repr: <wx._core.Frame object at 0x000002C7C5CF4550>
+10-26 22:52:24 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+10-26 22:52:24 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1215:Reference footprint='LED52'
+10-26 22:52:27 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1363:Reference designator is: LED
+10-26 22:52:27 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1364:Reference number is: 52
+10-26 22:52:27 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1396:Sorted and filtered list:
+['LED1', 'LED2', 'LED3', 'LED4', 'LED5', 'LED6', 'LED7', 'LED8', 'LED9', 'LED10', 'LED11', 'LED12', 'LED13', 'LED14', 'LED15', 'LED16', 'LED17', 'LED18', 'LED19', 'LED20', 'LED21', 'LED22', 'LED23', 'LED24', 'LED25', 'LED26', 'LED27', 'LED28', 'LED29', 'LED30', 'LED31', 'LED32', 'LED33', 'LED34', 'LED35', 'LED36', 'LED37', 'LED38', 'LED39', 'LED40', 'LED41', 'LED42', 'LED43', 'LED44', 'LED45', 'LED46', 'LED47', 'LED48', 'LED49', 'LED50', 'LED51', 'LED52', 'LED53', 'LED54', 'LED55', 'LED56', 'LED57']
+10-26 22:52:27 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 772:wx.Colour(240, 240, 240, 255)
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 984:'7.1'
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1036:Preparing config for reference circular
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1053:Saving config file
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1055:Saved the config file
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1435:Footprints to place:
+['LED52', 'LED53', 'LED54', 'LED55', 'LED56', 'LED57']
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.place_footprints 370:Starting placing with circular layout
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.place_footprints 380:rotation center at: (218075000, 144976000)
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.place_footprints 381:start angle: -90.000
+10-26 22:52:52 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 1456:Fatal error when executing place footprints
+Traceback (most recent call last):
+  File "C:\Users\angel\OneDrive\Documents\KiCad\9.0\3rdparty\plugins\com_github_MitjaNemec_PlaceFootprints\action_place_footprints.py", line 1450, in Run
+    placer.place_circular(footprints_to_place, ref_fp_ref, radius, delta_angle, delta_radius,
+  File "C:\Users\angel\OneDrive\Documents\KiCad\9.0\3rdparty\plugins\com_github_MitjaNemec_PlaceFootprints\place_footprints.py", line 383, in place_circular
+    transforms = self._build_circular_transforms(footprints, ref_fp, radius, delta_angle, delta_radius, step,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\angel\OneDrive\Documents\KiCad\9.0\3rdparty\plugins\com_github_MitjaNemec_PlaceFootprints\place_footprints.py", line 437, in _build_circular_transforms
+    footprint_angle = footprint_angle + index // step * rotation
+                                        ~~~~~~^^~~~~~
+ZeroDivisionError: integer division or modulo by zero

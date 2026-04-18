@@ -1,0 +1,263 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "444e4b8c-6861-422b-b2fa-8c813015568e")
+	(paper "A4")
+	(title_block
+		(title "Sheets")
+	)
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 74.93 36.83) (xy 80.01 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0518a032-56d8-4015-a8b3-82c5ddad78c0")
+	)
+	(wire
+		(pts
+			(xy 74.93 39.37) (xy 80.01 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa59051-0fe6-4df3-a44f-e7ee527415cf")
+	)
+	(sheet
+		(at 128.27 31.75)
+		(size 43.18 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 194 0 0 1)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "67e43190-c619-4add-9b93-be6352b34c99")
+		(property "Sheetname" "24 to 3V3 (page 5)"
+			(at 128.27 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "24-5_buck.kicad_sch"
+			(at 128.27 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "open_vettam_15CCT"
+				(path "/444e4b8c-6861-422b-b2fa-8c813015568e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 80.01 31.75)
+		(size 43.18 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "83f8d3d1-df08-4487-bd35-1aff17b4e1e5")
+		(property "Sheetname" "CC_Driver"
+			(at 80.01 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cc_driver.kicad_sch"
+			(at 80.01 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM_CW" input
+			(at 80.01 36.83 180)
+			(uuid "bd909171-1d96-4873-b2e9-e5f7bdd96897")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM_WW" input
+			(at 80.01 39.37 180)
+			(uuid "1038a284-4901-4f61-8a9b-ec61109df74b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "open_vettam_15CCT"
+				(path "/444e4b8c-6861-422b-b2fa-8c813015568e"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 31.75)
+		(size 43.18 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "ebe69659-2589-420e-8876-4f121d2e9926")
+		(property "Sheetname" "24V_Input"
+			(at 177.8 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "24v_Input.kicad_sch"
+			(at 177.8 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "open_vettam_15CCT"
+				(path "/444e4b8c-6861-422b-b2fa-8c813015568e"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 31.75)
+		(size 43.18 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "f5111754-f7b4-4c2f-b103-74ae566c8bbe")
+		(property "Sheetname" "MCU"
+			(at 31.75 31.0384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 31.75 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "PWM_WW" output
+			(at 74.93 39.37 0)
+			(uuid "ebae17fd-762d-49e2-8701-6b4ac24cfde7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM_CW" output
+			(at 74.93 36.83 0)
+			(uuid "16d1832c-b6ea-42a6-bc1c-2ee4a2985f1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "open_vettam_15CCT"
+				(path "/444e4b8c-6861-422b-b2fa-8c813015568e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "0")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,155 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "53dcad19-9754-43bd-98df-e69a661f0dbc")
+	(paper "A4")
+	(title_block
+		(title "Sheets")
+	)
+	(lib_symbols)
+	(sheet
+		(at 115.57 86.36)
+		(size 46.99 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "3a67a079-c797-4673-b902-fb6229a1c323")
+		(property "Sheetname" "D_temp_sensor"
+			(at 115.57 85.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "digital_temp.kicad_sch"
+			(at 115.57 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "led_mcpcb"
+				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.88 86.36)
+		(size 48.26 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "995afb00-ad6b-4bd4-817a-61ad1f94af9c")
+		(property "Sheetname" "Warm White 3000K"
+			(at 182.88 85.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "WW-3000.kicad_sch"
+			(at 182.88 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "led_mcpcb"
+				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 86.36)
+		(size 48.26 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 194 0 0 1)
+		)
+		(uuid "b842e5c4-e9d5-4e07-92d0-cbe4aba21d83")
+		(property "Sheetname" "Cool White 5000K"
+			(at 48.26 85.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CW-5000.kicad_sch"
+			(at 48.26 116.1546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "led_mcpcb"
+				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc"
+					(page "1")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "0")
+		)
+	)
+	(embedded_fonts no)
+)
