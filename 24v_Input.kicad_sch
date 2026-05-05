@@ -3018,7 +3018,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47ÂµF 50V"
+		(property "Value" "47µF 50V"
 			(at 232.41 99.0599 90)
 			(show_name no)
 			(do_not_autoplace no)

@@ -5,12 +5,9 @@
 	(uuid "78a2029d-a47e-4e5b-8d84-c4ecdb09e136")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector_Generic:Conn_01x01"
 			(pin_names
-				(offset 0.762)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -18,8 +15,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
+			(property "Reference" "J"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -28,8 +25,8 @@
 					)
 				)
 			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -39,7 +36,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 0 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -50,17 +47,6 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -71,7 +57,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "test point tp"
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -82,7 +68,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Pin* Test*"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -93,24 +79,44 @@
 					)
 				)
 			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "TestPoint_1_1"
 				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1590,12 +1596,6 @@
 		)
 	)
 	(junction
-		(at 171.45 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c1e391d-6740-4fb2-937e-68a4c9bec54e")
-	)
-	(junction
 		(at 168.91 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1614,16 +1614,22 @@
 		(uuid "b141635b-b0a2-42a6-8a10-5df844317926")
 	)
 	(junction
-		(at 186.69 63.5)
+		(at 162.56 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e08db000-a0ba-498f-a620-508c1669bc6f")
+		(uuid "cc6677f5-a1b5-4fd5-a972-37a5abe9b26a")
 	)
 	(junction
 		(at 143.51 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2965d58-ec40-49fe-9788-d6e6a25cc147")
+	)
+	(junction
+		(at 186.69 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6dcd88c-5024-4489-8283-286ae72e901a")
 	)
 	(wire
 		(pts
@@ -1644,16 +1650,6 @@
 			(type default)
 		)
 		(uuid "04c9b185-a6e4-472d-8384-f26035135897")
-	)
-	(wire
-		(pts
-			(xy 171.45 115.57) (xy 143.51 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05400511-2e19-44fa-b1cc-88fe5a1c5ced")
 	)
 	(wire
 		(pts
@@ -1707,6 +1703,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 115.57) (xy 143.51 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8ee3c7-4e8a-425d-af7f-72d3b2043bd3")
+	)
+	(wire
+		(pts
 			(xy 133.35 107.95) (xy 132.08 107.95)
 		)
 		(stroke
@@ -1737,16 +1743,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 60.96) (xy 191.77 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a50cf8b9-2ace-4457-b5b2-458f33487075")
-	)
-	(wire
-		(pts
 			(xy 209.55 102.87) (xy 209.55 115.57)
 		)
 		(stroke
@@ -1754,16 +1750,6 @@
 			(type default)
 		)
 		(uuid "b08504d5-233c-47bc-8cb6-7e2df664c09d")
-	)
-	(wire
-		(pts
-			(xy 191.77 63.5) (xy 186.69 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb10ddd5-dc65-43f3-aba2-0bd4cc06b9fc")
 	)
 	(wire
 		(pts
@@ -1787,7 +1773,17 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 115.57) (xy 171.45 115.57)
+			(xy 186.69 63.5) (xy 194.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c28012b1-e404-4c39-bfb5-eced51610a55")
+	)
+	(wire
+		(pts
+			(xy 162.56 115.57) (xy 186.69 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1877,7 +1873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "116754a3-343b-4387-a5da-3711c027c790")
-		(property "Reference" "R1"
+		(property "Reference" "R13"
 			(at 189.23 71.1199 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2027,7 +2023,86 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "R1")
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 123.19 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "143dc661-a410-46da-9775-df05bf75c0af")
+		(property "Reference" "J6"
+			(at 125.73 91.4399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TEMP_SDA"
+			(at 125.73 93.9799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 123.19 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0a184e96-b009-4003-b6d1-d6faa69f0ee4")
+		)
+		(instances
+			(project "led_mcpcb"
+				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -2268,6 +2343,39 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Texas Instruments"
+			(at 143.51 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TMP112AIDRLR"
+			(at 143.51 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" "595-TMP112AIDRLR"
+			(at 143.51 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "9c54e492-a451-4a71-9378-3fe97d03f292")
 		)
@@ -2307,7 +2415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d26402b-9549-4f7c-9b4c-a03a27dda716")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR06"
 			(at 143.51 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -2367,49 +2475,48 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "#PWR010")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 191.77 60.96 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 162.56 110.49 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "30f3076b-bc8b-4722-aeac-6ca647461370")
-		(property "Reference" "TEMP_3V3"
-			(at 194.31 57.6579 0)
+		(uuid "3266b9ae-5c7c-49b4-b65c-b1599adc1af0")
+		(property "Reference" "J8"
+			(at 165.1 109.2199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "PAD"
-			(at 194.31 58.9279 0)
-			(hide yes)
+		(property "Value" "TEMP_GND"
+			(at 165.1 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 196.85 60.96 0)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 162.56 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2420,7 +2527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 60.96 0)
+			(at 162.56 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2430,8 +2537,8 @@
 				)
 			)
 		)
-		(property "Description" "PAD 2.0 x 2.0 mm"
-			(at 191.77 60.96 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 162.56 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2442,12 +2549,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0ed7319-ec61-4087-b3a0-ea2b8b52287f")
+			(uuid "d18f4863-2ea7-410d-856d-7b0980c9148d")
 		)
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "TEMP_3V3")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2465,7 +2572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3be9f2c2-635c-46a0-9410-276ec5e3133f")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR05"
 			(at 186.69 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2525,49 +2632,48 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "#PWR09")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 107.95 100.33 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 107.95 95.25 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8a716ac9-d3bb-44ff-bf51-85e7194acc1e")
-		(property "Reference" "TEMP_SCL"
-			(at 110.49 97.0279 0)
+		(uuid "45b07c87-d242-4e3a-b86a-95b31864cf26")
+		(property "Reference" "J5"
+			(at 110.49 93.9799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "PAD"
-			(at 110.49 98.2979 0)
-			(hide yes)
+		(property "Value" "TEMP_SCL"
+			(at 110.49 96.5199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 113.03 100.33 0)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 107.95 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2578,7 +2684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 100.33 0)
+			(at 107.95 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2588,8 +2694,8 @@
 				)
 			)
 		)
-		(property "Description" "PAD 1.5 x 1.5 mm"
-			(at 107.95 100.33 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 107.95 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2600,54 +2706,53 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ec4d37b-57fd-48d4-8405-64b339b58945")
+			(uuid "07fafb8f-39be-42b9-aaed-5de5404aed7b")
 		)
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "TEMP_SCL")
+					(reference "J5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 123.19 97.79 0)
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 194.31 58.42 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "988a701e-2789-4b3d-828f-b2414b688dc0")
-		(property "Reference" "TEMP_SDA"
-			(at 125.73 94.4879 0)
+		(uuid "6b4ef20c-20b7-41dc-a8b0-923e3cd9e946")
+		(property "Reference" "J7"
+			(at 196.85 57.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "PAD"
-			(at 125.73 95.7579 0)
-			(hide yes)
+		(property "Value" "TEMP_3V3"
+			(at 196.85 59.6899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 128.27 97.79 0)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_1x2mm"
+			(at 194.31 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2658,7 +2763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 97.79 0)
+			(at 194.31 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2668,8 +2773,8 @@
 				)
 			)
 		)
-		(property "Description" "PAD 1.5 x 1.5 mm"
-			(at 123.19 97.79 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 194.31 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2680,12 +2785,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "aaaa09f2-32b5-4f38-975d-d772ce7aa88e")
+			(uuid "d064a8ed-7ee8-435d-a227-b0108b2c93bd")
 		)
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "TEMP_SDA")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -2703,7 +2808,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f54cfd3-92e4-4102-bef2-b3a3d6374444")
-		(property "Reference" "R3"
+		(property "Reference" "R14"
 			(at 171.45 88.8999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2853,7 +2958,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "R3")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -3022,86 +3127,6 @@
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 171.45 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8281571-b4bc-462a-9348-542c12e024e4")
-		(property "Reference" "TEMP_GND"
-			(at 173.99 112.2679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PAD"
-			(at 173.99 113.5379 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 176.53 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PAD 2.0 x 2.0 mm"
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f315a356-9ded-434b-875b-04a32642aa49")
-		)
-		(instances
-			(project "led_mcpcb"
-				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/3a67a079-c797-4673-b902-fb6229a1c323"
-					(reference "TEMP_GND")
 					(unit 1)
 				)
 			)

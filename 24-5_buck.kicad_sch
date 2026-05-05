@@ -2559,7 +2559,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.1ÂµF 50V"
+		(property "Value" "0.1µF 50V"
 			(at 151.13 114.2999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2904,7 +2904,7 @@
 				)
 			)
 		)
-		(property "Value" "10ÂµH"
+		(property "Value" "10µH"
 			(at 168.91 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2985,7 +2985,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "652-SRP5030HMT-100M"
 			(at 175.26 780.01 0)
 			(hide yes)
 			(show_name no)
@@ -3227,7 +3227,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2ÂµF 50V"
+		(property "Value" "2.2µF 50V"
 			(at 167.64 114.2999 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3808,7 +3808,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10ÂµF 16V"
+		(property "Value" "10µF 16V"
 			(at 213.36 115.5699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3975,7 +3975,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1ÂµF 50V"
+		(property "Value" "0.1µF 50V"
 			(at 139.7 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)

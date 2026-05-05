@@ -1,0 +1,21 @@
+(version 1)
+
+(rule "JLCPCB MCPCB: F.Cu only"
+    (severity error)
+    (layer B.Cu)
+    (constraint disallow footprint pad track via micro_via buried_via zone))
+
+(rule "JLCPCB MCPCB: no vias"
+    (severity error)
+    (constraint disallow via micro_via buried_via))
+
+(rule "JLCPCB MCPCB: front copper geometry"
+    (severity error)
+    (layer F.Cu)
+    (constraint track_width (min 0.15mm))
+    (constraint clearance (min 0.15mm))
+    (constraint edge_clearance (min 0.40mm)))
+
+(rule "JLCPCB MCPCB: drill minimum"
+    (severity error)
+    (constraint hole_size (min 0.65mm)))

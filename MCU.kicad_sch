@@ -4548,16 +4548,6 @@
 		)
 		(uuid "1065caf6-e64f-4e92-ab5a-292348888063")
 	)
-	(label ""
-		(at 119.38 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b7fda3f-c009-48b5-98c4-44403f90abee")
-	)
 	(label "TX"
 		(at 38.1 116.84 0)
 		(effects
@@ -4629,12 +4619,12 @@
 		(uuid "b762a3ff-deb6-4a14-afa6-0f39c19d6e19")
 	)
 	(label "BOOT"
-		(at 114.3 123.19 0)
+		(at 114.3 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "d5282a6a-9b98-4600-bcfc-78eb6c13d3b2")
 	)
@@ -5069,7 +5059,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 99.06 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5091,6 +5081,9 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo Group" (at 99.06 114.3 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL" (at 99.06 114.3 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Mouser Part Number" "603-RC0603FR-0710KL" (at 99.06 114.3 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "2"
 			(uuid "7e220c8e-42fd-456a-bdcb-c1923dbe2b59")
 		)
@@ -6635,7 +6628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 83.82 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -6657,6 +6650,9 @@
 				)
 			)
 		)
+		(property "Manufacturer_Name" "Yageo Group" (at 83.82 77.47 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Manufacturer_Part_Number" "RC0603FR-0710KL" (at 83.82 77.47 0) (hide yes) (effects (font (size 1.27 1.27))))
+		(property "Mouser Part Number" "603-RC0603FR-0710KL" (at 83.82 77.47 0) (hide yes) (effects (font (size 1.27 1.27))))
 		(pin "2"
 			(uuid "4a3a971f-ce0c-4825-b954-80b79ca7fa42")
 		)

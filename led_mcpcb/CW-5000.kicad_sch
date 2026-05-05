@@ -8,12 +8,9 @@
 		(title "Cool White 5000K")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector_Generic:Conn_01x01"
 			(pin_names
-				(offset 0.762)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -21,8 +18,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
+			(property "Reference" "J"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -31,8 +28,8 @@
 					)
 				)
 			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
+			(property "Value" "Conn_01x01"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -42,7 +39,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 5.08 0 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -53,17 +50,6 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "test point"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -74,7 +60,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "test point tp"
+			(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -85,7 +71,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Pin* Test*"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -96,24 +82,44 @@
 					)
 				)
 			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "TestPoint_1_1"
 				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -733,145 +739,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 223.52 80.01)
@@ -1025,6 +892,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 106.68) (xy 25.4 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a2389dc-7d9f-4e34-9d11-b78c2c576499")
+	)
+	(wire
+		(pts
 			(xy 209.55 80.01) (xy 223.52 80.01)
 		)
 		(stroke
@@ -1042,16 +919,6 @@
 			(type default)
 		)
 		(uuid "8e3a8a56-d2a3-490a-b550-54da570ccce0")
-	)
-	(wire
-		(pts
-			(xy 195.58 78.74) (xy 195.58 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90aa678a-4911-4ee1-8856-026be36442ee")
 	)
 	(wire
 		(pts
@@ -1105,7 +972,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 109.22) (xy 29.21 109.22)
+			(xy 36.83 109.22) (xy 25.4 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1453,7 +1320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01fb6248-708c-4942-93d4-fb36080dcc8a")
-		(property "Reference" "LED57"
+		(property "Reference" "LED21"
 			(at 135.89 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1601,7 +1468,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED57")
+					(reference "LED21")
 					(unit 1)
 				)
 			)
@@ -1619,7 +1486,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0283d81f-ae2e-45f9-9bfc-0800624ea89a")
-		(property "Reference" "LED69"
+		(property "Reference" "LED41"
 			(at 121.92 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1767,7 +1634,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED69")
+					(reference "LED41")
 					(unit 1)
 				)
 			)
@@ -1785,7 +1652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0841e1c9-9423-4c35-b33e-051141745710")
-		(property "Reference" "LED52"
+		(property "Reference" "LED32"
 			(at 90.17 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1933,7 +1800,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED52")
+					(reference "LED32")
 					(unit 1)
 				)
 			)
@@ -2117,7 +1984,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14a7e51a-95a2-474b-8bab-9f8a71b33d3c")
-		(property "Reference" "LED21"
+		(property "Reference" "LED24"
 			(at 74.93 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2265,7 +2132,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED21")
+					(reference "LED24")
 					(unit 1)
 				)
 			)
@@ -2283,7 +2150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32a19779-0cfa-400c-95f0-97bc19d46db6")
-		(property "Reference" "LED18"
+		(property "Reference" "LED20"
 			(at 120.65 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2431,7 +2298,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED18")
+					(reference "LED20")
 					(unit 1)
 				)
 			)
@@ -2448,7 +2315,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "33b2f5bd-f519-46c6-b0cb-e62b5dfafa5f")
-		(property "Reference" "LED19"
+		(property "Reference" "LED22"
 			(at 44.45 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2596,7 +2463,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED19")
+					(reference "LED22")
 					(unit 1)
 				)
 			)
@@ -2614,7 +2481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ac03147-0011-45e0-8dc5-ee5ff942dee0")
-		(property "Reference" "LED56"
+		(property "Reference" "LED14"
 			(at 135.89 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2762,7 +2629,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED56")
+					(reference "LED14")
 					(unit 1)
 				)
 			)
@@ -2780,7 +2647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4312d262-f6df-4236-a990-b55ff18107fc")
-		(property "Reference" "R14"
+		(property "Reference" "R4"
 			(at 240.03 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2930,7 +2797,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "R14")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3114,7 +2981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "560f1253-3ddf-4bb5-9233-ddf96a9b0181")
-		(property "Reference" "LED20"
+		(property "Reference" "LED23"
 			(at 59.69 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3262,7 +3129,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED20")
+					(reference "LED23")
 					(unit 1)
 				)
 			)
@@ -3279,7 +3146,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5ab75983-863c-4599-a0e1-0c3c333d9924")
-		(property "Reference" "LED13"
+		(property "Reference" "LED15"
 			(at 44.45 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3427,7 +3294,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED13")
+					(reference "LED15")
 					(unit 1)
 				)
 			)
@@ -3445,7 +3312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6353219e-7b36-4298-8c1f-074f39c3b225")
-		(property "Reference" "LED50"
+		(property "Reference" "LED30"
 			(at 59.69 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3593,7 +3460,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED50")
+					(reference "LED30")
 					(unit 1)
 				)
 			)
@@ -3611,7 +3478,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6354ff61-0ed8-4a53-9c82-a3fb8fb6fe2f")
-		(property "Reference" "LED55"
+		(property "Reference" "LED7"
 			(at 135.89 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3759,7 +3626,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED55")
+					(reference "LED7")
 					(unit 1)
 				)
 			)
@@ -3777,7 +3644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "676c9546-b000-4acf-ade8-8698814f9aa2")
-		(property "Reference" "R16"
+		(property "Reference" "R6"
 			(at 267.97 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3927,7 +3794,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "R16")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -3945,7 +3812,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6b236e92-0575-4cf1-a4d3-1bb7d504dd10")
-		(property "Reference" "LED67"
+		(property "Reference" "LED39"
 			(at 91.44 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4093,7 +3960,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED67")
+					(reference "LED39")
 					(unit 1)
 				)
 			)
@@ -4110,7 +3977,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e2d3129-b338-48f9-bc0e-e4e592e9e09a")
-		(property "Reference" "LED49"
+		(property "Reference" "LED29"
 			(at 44.45 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4258,7 +4125,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED49")
+					(reference "LED29")
 					(unit 1)
 				)
 			)
@@ -4276,7 +4143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79ecbaaf-73db-4476-a6f6-669940d33c5b")
-		(property "Reference" "LED11"
+		(property "Reference" "LED12"
 			(at 105.41 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4424,86 +4291,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 184.15 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7b8429a4-510d-42ce-b6ef-c241369f379d")
-		(property "Reference" "CW+"
-			(at 186.69 74.1679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PAD"
-			(at 183.261 75.311 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
-			(at 189.23 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PAD 2.5 x 2.5 mm"
-			(at 184.15 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b655de48-28bc-4fc3-beb5-3607559bdeb6")
-		)
-		(instances
-			(project "led_mcpcb"
-				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "CW+")
+					(reference "LED12")
 					(unit 1)
 				)
 			)
@@ -4521,7 +4309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cfe1bef-2108-4839-bbe9-dc29956f496c")
-		(property "Reference" "LED66"
+		(property "Reference" "LED38"
 			(at 76.2 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4669,7 +4457,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED66")
+					(reference "LED38")
 					(unit 1)
 				)
 			)
@@ -4687,7 +4475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80217cf6-13a6-4b1e-aae3-cd3404f4bb34")
-		(property "Reference" "LED22"
+		(property "Reference" "LED25"
 			(at 90.17 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4835,7 +4623,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED22")
+					(reference "LED25")
 					(unit 1)
 				)
 			)
@@ -4853,7 +4641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81aa56be-1001-4a3a-8976-e6f7d6079a1c")
-		(property "Reference" "R13"
+		(property "Reference" "R3"
 			(at 226.06 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5003,7 +4791,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "R13")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5187,7 +4975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9293d2b7-dd08-4dce-9eac-5d4a14fbb8db")
-		(property "Reference" "R11"
+		(property "Reference" "R1"
 			(at 198.12 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5337,7 +5125,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "R11")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -5521,7 +5309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a87f1f3-794a-4255-8b27-d48de2e651a1")
-		(property "Reference" "LED8"
+		(property "Reference" "LED9"
 			(at 59.69 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5669,7 +5457,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED8")
+					(reference "LED9")
 					(unit 1)
 				)
 			)
@@ -5687,7 +5475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a9e4f8d-aa58-4da9-8210-54295c443351")
-		(property "Reference" "LED63"
+		(property "Reference" "LED35"
 			(at 135.89 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5835,7 +5623,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED63")
+					(reference "LED35")
 					(unit 1)
 				)
 			)
@@ -5853,7 +5641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f9cc381-4b32-4207-a0ce-21a4941bc863")
-		(property "Reference" "LED15"
+		(property "Reference" "LED17"
 			(at 74.93 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6001,7 +5789,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED15")
+					(reference "LED17")
 					(unit 1)
 				)
 			)
@@ -6019,7 +5807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a82d9094-d234-495c-9dfb-7a641f7b5bae")
-		(property "Reference" "LED54"
+		(property "Reference" "LED34"
 			(at 120.65 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6167,7 +5955,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED54")
+					(reference "LED34")
 					(unit 1)
 				)
 			)
@@ -6351,7 +6139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae6bc0f4-21ee-4772-b387-40dcdb7d50d0")
-		(property "Reference" "LED51"
+		(property "Reference" "LED31"
 			(at 74.93 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6499,7 +6287,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED51")
+					(reference "LED31")
 					(unit 1)
 				)
 			)
@@ -6517,7 +6305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b16b1ff7-c7dc-40f6-bcb5-a5230baf1df2")
-		(property "Reference" "LED7"
+		(property "Reference" "LED8"
 			(at 44.45 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6665,7 +6453,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED7")
+					(reference "LED8")
 					(unit 1)
 				)
 			)
@@ -6683,7 +6471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b178f81e-0aa1-47ce-960a-85f7fe918763")
-		(property "Reference" "LED65"
+		(property "Reference" "LED37"
 			(at 60.96 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6831,7 +6619,86 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED65")
+					(reference "LED37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 184.15 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3a0b696-44b9-4b13-9f15-19e94e2527e5")
+		(property "Reference" "J1"
+			(at 186.69 72.3899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CW+"
+			(at 186.69 74.9299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
+			(at 184.15 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 184.15 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e04aef01-cdce-4091-8847-54be519a1e2e")
+		)
+		(instances
+			(project "led_mcpcb"
+				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -6849,7 +6716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4a0e8fd-578e-4fba-8baf-eefcbcba44eb")
-		(property "Reference" "LED16"
+		(property "Reference" "LED18"
 			(at 90.17 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6997,86 +6864,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 29.21 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b7c301a4-3286-43cc-a40a-f002e039cace")
-		(property "Reference" "CW-"
-			(at 31.75 104.6479 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PAD"
-			(at 28.321 105.791 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.5x2.5mm"
-			(at 34.29 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "PAD 2.5 x 2.5 mm"
-			(at 29.21 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4e6fa2de-e83a-430c-8e7e-74a19047420c")
-		)
-		(instances
-			(project "led_mcpcb"
-				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "CW-")
+					(reference "LED18")
 					(unit 1)
 				)
 			)
@@ -7260,7 +7048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c378d214-dd89-4654-bd35-1ca37d929744")
-		(property "Reference" "LED14"
+		(property "Reference" "LED16"
 			(at 59.69 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7408,7 +7196,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED14")
+					(reference "LED16")
 					(unit 1)
 				)
 			)
@@ -7426,7 +7214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c59fdba2-30b1-4aee-a4dd-b132f58b419d")
-		(property "Reference" "LED9"
+		(property "Reference" "LED10"
 			(at 74.93 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7574,7 +7362,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED9")
+					(reference "LED10")
 					(unit 1)
 				)
 			)
@@ -7592,7 +7380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c87d403b-e7f2-4dd2-be50-35a108b2d013")
-		(property "Reference" "LED17"
+		(property "Reference" "LED19"
 			(at 105.41 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7740,7 +7528,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED17")
+					(reference "LED19")
 					(unit 1)
 				)
 			)
@@ -7758,7 +7546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca3fc1d6-0ec6-46d1-9779-a954aa25378a")
-		(property "Reference" "LED10"
+		(property "Reference" "LED11"
 			(at 90.17 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7906,7 +7694,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED10")
+					(reference "LED11")
 					(unit 1)
 				)
 			)
@@ -7924,7 +7712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca4b2149-d185-4494-ac81-f5094266abe7")
-		(property "Reference" "LED24"
+		(property "Reference" "LED27"
 			(at 120.65 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8072,7 +7860,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED24")
+					(reference "LED27")
 					(unit 1)
 				)
 			)
@@ -8090,7 +7878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cca50f58-453e-468f-ad52-a090f0c5ea5e")
-		(property "Reference" "LED53"
+		(property "Reference" "LED33"
 			(at 105.41 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8238,7 +8026,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED53")
+					(reference "LED33")
 					(unit 1)
 				)
 			)
@@ -8256,7 +8044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce79ab13-6cb0-4f3b-92c5-13b4b466b29c")
-		(property "Reference" "LED70"
+		(property "Reference" "LED42"
 			(at 137.16 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8404,7 +8192,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED70")
+					(reference "LED42")
 					(unit 1)
 				)
 			)
@@ -8489,6 +8277,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x01")
+		(at 25.4 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "d6fb7641-b62e-4cb0-8d0e-c26ba5607346")
+		(property "Reference" "J2"
+			(at 27.94 100.3299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CW-"
+			(at 26.924 104.14 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWirePad_1x01_SMD_5x10mm"
+			(at 25.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 25.4 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "684234e9-ae4b-48fd-869b-1396021d4de8")
+		)
+		(instances
+			(project "led_mcpcb"
+				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys_Parts:L128-5090HA35000K1")
 		(at 99.06 144.78 0)
 		(unit 1)
@@ -8500,7 +8366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da524c16-a219-48c6-92cf-737b2af8ba27")
-		(property "Reference" "LED68"
+		(property "Reference" "LED40"
 			(at 106.68 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8648,7 +8514,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED68")
+					(reference "LED40")
 					(unit 1)
 				)
 			)
@@ -8666,7 +8532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfa50a78-0375-48aa-a3f8-be6e57d36e39")
-		(property "Reference" "LED23"
+		(property "Reference" "LED26"
 			(at 105.41 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8814,7 +8680,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED23")
+					(reference "LED26")
 					(unit 1)
 				)
 			)
@@ -8832,7 +8698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7634f3b-0da0-447c-b2d7-8b93b1984435")
-		(property "Reference" "LED58"
+		(property "Reference" "LED28"
 			(at 135.89 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8980,7 +8846,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED58")
+					(reference "LED28")
 					(unit 1)
 				)
 			)
@@ -8997,7 +8863,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec38c156-5cca-459d-8d68-3587de0a5e93")
-		(property "Reference" "LED64"
+		(property "Reference" "LED36"
 			(at 45.72 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9145,7 +9011,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED64")
+					(reference "LED36")
 					(unit 1)
 				)
 			)
@@ -9163,7 +9029,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f059a070-6d90-40ce-bd50-4075846fcaed")
-		(property "Reference" "R12"
+		(property "Reference" "R2"
 			(at 212.09 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9313,85 +9179,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 195.58 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8dad5c0-bbb0-48e5-a030-5c8ddbb2dfc8")
-		(property "Reference" "#PWR05"
-			(at 195.58 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "vcc"
-			(at 195.58 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 195.58 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca05041b-51e3-45cd-ad35-7b609aff99a6")
-		)
-		(instances
-			(project "led_mcpcb"
-				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "#PWR05")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -9409,7 +9197,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa6fe3e3-a997-4417-a35e-b091c705e65a")
-		(property "Reference" "R15"
+		(property "Reference" "R5"
 			(at 254 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9559,7 +9347,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "R15")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -9577,7 +9365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc89b92b-fcfd-4dc0-ac93-ab5eb2f97b63")
-		(property "Reference" "LED12"
+		(property "Reference" "LED13"
 			(at 120.65 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9725,7 +9513,7 @@
 		(instances
 			(project "led_mcpcb"
 				(path "/53dcad19-9754-43bd-98df-e69a661f0dbc/b842e5c4-e9d5-4e07-92d0-cbe4aba21d83"
-					(reference "LED12")
+					(reference "LED13")
 					(unit 1)
 				)
 			)
