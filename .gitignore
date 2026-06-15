@@ -5,10 +5,12 @@ fp-info-cache
 ~*.kicad_sch.lck
 _autosave-*.kicad_sch
 _autosave-*.kicad_pcb
+_autosave-*.kicad_pro
 *.kicad_sch-bak
 *.kicad_pcb-bak
 *.kicad_pro-bak
 *-backups/
+*.log
 
 # Generated review output
 output/
@@ -18,3 +20,5 @@ output/
 .history/
 .codex/
 nul
+Thumbs.db
+Desktop.ini
